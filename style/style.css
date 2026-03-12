@@ -1,4 +1,4 @@
-/* Reset de base */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -18,33 +18,34 @@ header {
     background-color: #8b0000;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
 }
 
 /* Navigation */
 nav {
-    margin-block-start: 10px;
+    margin-block-start: 15px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     margin: 0 15px;
+    font-size: 18px;
     font-weight: bold;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #ffd700;
 }
 
 /* Sections */
 section {
-    padding: 40px;
     max-inline-size: 900px;
-    margin: auto;
+    margin: 40px auto;
+    padding: 40px;
     background: white;
-    margin-block-start: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
 
 /* Titres */
@@ -59,25 +60,29 @@ h2 {
 
 h3 {
     margin-block-start: 20px;
-    color: #444;
+    color: #555;
 }
 
-/* Liste du menu */
+/* Paragraphes */
+p {
+    margin-block-end: 15px;
+    font-size: 17px;
+}
+
+/* Listes menu */
 ul {
-    list-style-type: square;
     margin-inline-start: 20px;
 }
 
-/* Contact */
-#contact p {
-    margin: 5px 0;
+li {
+    margin-block-end: 8px;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 15px;
-    margin-block-start: 20px;
+    padding: 20px;
     background-color: #222;
     color: white;
+    margin-block-start: 40px;
 }
