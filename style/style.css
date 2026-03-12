@@ -1,0 +1,83 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style général */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #8b0000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navigation */
+nav {
+    margin-block-start: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    padding: 40px;
+    max-inline-size: 900px;
+    margin: auto;
+    background: white;
+    margin-block-start: 20px;
+    border-radius: 8px;
+}
+
+/* Titres */
+h1 {
+    margin-block-end: 10px;
+}
+
+h2 {
+    color: #8b0000;
+    margin-block-end: 15px;
+}
+
+h3 {
+    margin-block-start: 20px;
+    color: #444;
+}
+
+/* Liste du menu */
+ul {
+    list-style-type: square;
+    margin-inline-start: 20px;
+}
+
+/* Contact */
+#contact p {
+    margin: 5px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-block-start: 20px;
+    background-color: #222;
+    color: white;
+}
