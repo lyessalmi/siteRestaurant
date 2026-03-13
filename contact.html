@@ -24,18 +24,25 @@
         <p>Email : contact@fiasco.fr</p>
 
         <h2>Formulaire de Contact</h2>
-        <form action="mailto:contact@fiasco.fr" method="post" enctype="text/plain">
-            <label for="nom">Nom :</label><br>
-            <input type="text" id="nom" name="nom" required><br><br>
+        <form id="contactForm">
 
-            <label for="email">Email :</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" minlength="2" required> <br>
 
-            <label for="message">Message :</label><br>
-            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+            <label for="email">Email :</label> 
+            <input type="email" id="email" name="email" required> <br>
 
-            <input type="submit" value="Envoyer">
-            <input type="reset" value="Effacer">
+            <label for="telephone">Téléphone :</label> 
+            <input type="tel" id="telephone" name="telephone" pattern="[0-9]{10}" placeholder="0612345678" required><br>
+
+            <label for="message">Message :</label> <br>
+            <textarea id="message" name="message" rows="5" minlength="10" required></textarea><br>
+
+            <button type="submit">Envoyer</button><br>
+            <button type="reset">Effacer</button>
+
+            <p id="erreur"></p>
+
         </form>
     </section>
 
