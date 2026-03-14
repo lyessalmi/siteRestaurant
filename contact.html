@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Contact - Restaurant Fiasco</title>
+</head>
+<body>
+    <header>
+        <h1>Contactez le Restaurant Fiasco</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="menu.html">Menu</a>
+            <a href="apropos.html">À propos</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section id="contact">
+        <h2>Nos Coordonnées</h2>
+        <p>Adresse : 10 Rue Exemple, 75000 Paris</p>
+        <p>Téléphone : 01 23 45 67 89</p>
+        <p>Email : contact@fiasco.fr</p>
+
+        <h2>Formulaire de Contact</h2>
+        <form action="mailto:contact@fiasco.fr" method="post" enctype="text/plain">
+            <label for="nom">Nom :</label><br>
+            <input type="text" id="nom" name="nom" required><br><br>
+
+            <label for="email">Email :</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message :</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+            <input type="submit" value="Envoyer">
+            <input type="reset" value="Effacer">
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 Restaurant Fiasco</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
