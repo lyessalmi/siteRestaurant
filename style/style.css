@@ -1,5 +1,3 @@
-/* RESET */
-
 *{
     margin:0;
     padding:0;
@@ -199,4 +197,17 @@ footer{
         font-size:26px;
     }
 
+}
+
+
+
+/* STYLES POUR LES IMAGES */
+
+.hero-img,
+#menu img{
+    display:block;
+    margin:20px auto;
+    max-width:100%;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
 }
