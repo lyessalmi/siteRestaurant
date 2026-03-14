@@ -1,83 +1,213 @@
-/* Reset de base */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Style général */
-body {
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
 }
 
-/* Header */
-header {
-    background-color: #8b0000;
-    color: white;
-    text-align: center;
-    padding: 20px;
+/* STYLE GENERAL */
+
+body{
+    background:#f8f8f8;
+    color:#333;
+    line-height:1.6;
 }
 
-/* Navigation */
-nav {
-    margin-block-start: 10px;
+/* HEADER */
+
+header{
+    background:#1f1f1f;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
+header h1{
+    margin-bottom:15px;
 }
 
-nav a:hover {
-    text-decoration: underline;
+/* NAVIGATION */
+
+nav{
+    margin-top:10px;
 }
 
-/* Sections */
-section {
-    padding: 40px;
-    max-inline-size: 900px;
-    margin: auto;
-    background: white;
-    margin-block-start: 20px;
-    border-radius: 8px;
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+    transition:0.3s;
 }
 
-/* Titres */
-h1 {
-    margin-block-end: 10px;
+nav a:hover{
+    color:#ffb347;
 }
 
-h2 {
-    color: #8b0000;
-    margin-block-end: 15px;
+/* ACCUEIL */
+
+#accueil{
+    text-align:center;
+    padding:60px 20px;
+    background:#ffb347;
+    color:white;
 }
 
-h3 {
-    margin-block-start: 20px;
-    color: #444;
+#accueil h2{
+    font-size:32px;
+    margin-bottom:10px;
 }
 
-/* Liste du menu */
-ul {
-    list-style-type: square;
-    margin-inline-start: 20px;
+#accueil p{
+    font-size:18px;
 }
 
-/* Contact */
-#contact p {
-    margin: 5px 0;
+/* SECTIONS PRINCIPALES */
+
+#menu,
+#apropos,
+#contact{
+    max-width:900px;
+    margin:40px auto;
+    background:white;
+    padding:40px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 15px;
-    margin-block-start: 20px;
-    background-color: #222;
-    color: white;
+/* TITRES DES SECTIONS */
+
+#menu h2,
+#apropos h2,
+#contact h2{
+    margin-bottom:15px;
+}
+
+#menu h3{
+    margin-top:20px;
+    border-left:4px solid #ffb347;
+    padding-left:10px;
+}
+
+/* LISTES DU MENU */
+
+ul{
+    list-style:none;
+    margin-top:10px;
+}
+
+li{
+    padding:8px 0;
+    border-bottom:1px solid #eee;
+}
+
+li:last-child{
+    border-bottom:none;
+}
+
+li:hover{
+    color:#ffb347;
+    transition:0.3s;
+}
+
+/* FORMULAIRE */
+
+form{
+    margin-top:20px;
+}
+
+label{
+    font-weight:bold;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:14px;
+}
+
+textarea{
+    resize:vertical;
+}
+
+/* BOUTONS */
+
+input[type="submit"],
+input[type="reset"]{
+    width:auto;
+    margin-top:15px;
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+input[type="submit"]{
+    background:#ffb347;
+    color:white;
+}
+
+input[type="submit"]:hover{
+    background:#e69c2f;
+}
+
+input[type="reset"]{
+    background:#ccc;
+    margin-left:10px;
+}
+
+input[type="reset"]:hover{
+    background:#aaa;
+}
+
+/* FOOTER */
+
+footer{
+    background:#1f1f1f;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:768px){
+
+    nav{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+    }
+
+    #menu,
+    #apropos,
+    #contact{
+        margin:20px;
+        padding:25px;
+    }
+
+    #accueil h2{
+        font-size:26px;
+    }
+
+}
+
+
+
+/* STYLES POUR LES IMAGES */
+
+.hero-img,
+#menu img{
+    display:block;
+    margin:20px auto;
+    max-width:100%;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
 }
