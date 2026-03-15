@@ -3,12 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="animate.css/animate.css">
     <title>Restaurant Fiasco - Accueil</title>
+    <style>
+        /* Quelques styles supplémentaires pour les animations */
+        .hero-img:hover {
+            transform: scale(1.05);
+            transition: transform 0.5s;
+        }
+
+        /* Ajouter une couleur et un ombrage animé sur le h2 */
+        #accueil h2.animate__animated {
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            color: #ffb347;
+        }
+
+        /* Animation continue sur un élément pour montrer animate.css */
+        .bouncing {
+            display: inline-block;
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Bienvenue sur notre Restaurant le Fiasco</h1>
-        <nav>
+        <h1 class="animate__animated animate__fadeInDown">Bienvenue sur notre Restaurant le Fiasco</h1>
+        <nav class="animate__animated animate__fadeIn animate__delay-1s">
             <a href="index.html">Accueil</a>
             <a href="menu.html">Menu</a>
             <a href="apropos.html">À propos</a>
@@ -17,17 +37,22 @@
     </header>
 
     <section id="accueil">
-        <h2>Bienvenue au Fiasco</h2>
-        <p>Découvrez une cuisine savoureuse dans une ambiance conviviale.</p>
+        <h2 class="animate__animated animate__fadeInUp">Bienvenue au Fiasco</h2>
+        <p class="animate__animated animate__fadeInUp animate__delay-1s">Découvrez une cuisine savoureuse dans une ambiance conviviale.</p>
 
         <!-- IMAGE PRINCIPALE -->
-        <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Restaurant plats" class="hero-img">
+        <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Restaurant plats" class="hero-img animate__animated animate__zoomIn">
 
         <!-- AUTRE IMAGE DÉCORATIVE -->
-        <img src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Ambiance restaurant" class="hero-img">
+        <img src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Ambiance restaurant" class="hero-img animate__animated animate__zoomIn animate__delay-1s">
+
+        <!-- Exemple d'effet continu -->
+        <p class="bouncing animate__animated animate__bounce animate__infinite animate__slow animate__delay-2s">
+            🍕 Commandez maintenant et profitez de nos offres ! 🍔
+        </p>
     </section>
 
-    <footer>
+    <footer class="animate__animated animate__fadeInUp animate__delay-2s">
         <p>© 2026 Restaurant Fiasco</p>
     </footer>
 </body>
